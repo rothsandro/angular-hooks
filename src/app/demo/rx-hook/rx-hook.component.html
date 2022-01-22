@@ -1,0 +1,5 @@
+<h2>Rx Hook</h2>
+
+<p *ngIf="counter$.ready; else loading">Counter: {{ counter$.value }}</p>
+
+<ng-template #loading> Waiting for counter to start... </ng-template>
